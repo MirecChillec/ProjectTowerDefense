@@ -4,28 +4,50 @@ using UnityEngine;
 
 public class TankTower : TowerBase
 {
-    public override void Attack()
+    public SpriteRenderer shieldRenderer;
+    public BoxCollider2D shieldColider;
+    public Shield shieldScript;
+    public bool shieldActive = false;
+    public override void Start()
     {
-        
+        base.Start();
+        shieldRenderer=projectile.GetComponent<SpriteRenderer>();
+        shieldColider = projectile.GetComponent<BoxCollider2D>();
+        shieldScript = projectile.GetComponent<Shield>();
     }
 
-    public override void Death()
+    public override void Update()
     {
+        base.Update();
+        if (shieldScript.currentHealth < 10)
+        {
+            ChangeAnimationState("Tank_Tower_Idle");
+        }
+    }
 
+    public override void Attack()
+    {
+        if (shieldScript.currentHealth >= 10)
+        {
+            ChangeAnimationState("Tank_Attack");
+        }
+        else
+        {
+            //show that shield is unusable
+        }
     }
 
     public override void Idle()
     {
-
+        shieldRenderer.enabled = false;
+        shieldScript.canRecharge = true;
+        ChangeAnimationState("Tank_Tower_Idle");
     }
 
-    public override void Sell()
+    public override void Shoot()
     {
-
-    }
-
-    public override void Upgrade()
-    {
-
+        ChangeAnimationState("Tank_Shielded");
+        shieldRenderer.enabled = true;
+        shieldScript.canRecharge = false;
     }
 }

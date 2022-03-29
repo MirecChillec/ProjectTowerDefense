@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicTower : MonoBehaviour
+public class BasicTower : TowerBase
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public override void Attack()
     {
-        
+        ChangeAnimationState("Basic_Tower_Attack");
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Idle()
     {
-        
+        ChangeAnimationState("Basic_Tower_Idle");
+    }
+
+    public override void Shoot()
+    {
+        Instantiate(projectile, this.position);
     }
 }
