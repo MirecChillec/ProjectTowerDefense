@@ -15,7 +15,8 @@ public class enemyClass : MonoBehaviour
     public Animator animator;
     public float timeStamp;
     public float coolDownInSeconds = 5f;
-    private void Start() {
+    private void Start() 
+    {
         isMoving = true;
         inRange = false;
     }

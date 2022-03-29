@@ -40,11 +40,6 @@ public class towerrr : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Tower ded");
-
-        //animacka
-
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
+        Destroy(this.gameObject);
     }   
 }
