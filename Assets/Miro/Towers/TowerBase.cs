@@ -35,12 +35,12 @@ public abstract class TowerBase : MonoBehaviour
 
     public virtual void TakeDamage()
     {
-
+        
     }
 
     public virtual void Sell()
     {
-        ChangeAnimationState("Sell");
+        ChangeAnimationState("Death");
         //Add money
         Destroy(this.gameObject);
     }
@@ -102,5 +102,4 @@ public abstract class TowerBase : MonoBehaviour
 
         currentState = newState;
     }
-
 }
