@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BasicTower : TowerBase
 {
-
     public override void Attack()
     {
         ChangeAnimationState("Basic_Tower_Attack");

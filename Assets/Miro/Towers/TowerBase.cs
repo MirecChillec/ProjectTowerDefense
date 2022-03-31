@@ -21,31 +21,29 @@ public abstract class TowerBase : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Color damageColor = Color.red;
     public Color normalColor = Color.white;
+    public enemyClass enemy;
+    public GameManager gameManager;
 
     public virtual void Start()
     {
         rangeColider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         towerAnimator = GetComponent<Animator>();
+        gameManager = FindObjectOfType<GameManager>();
         position = this.gameObject.transform;
         Idle();
     }
 
-    public abstract void Attack();
-
-    public virtual void TakeDamage()
-    {
-        
-    }
+    public virtual void Attack() { }
 
     public virtual void Sell()
     {
         ChangeAnimationState("Death");
-        //Add money
+        gameManager.Total += cost / 100 * 25;
         Destroy(this.gameObject);
     }
 
-    public abstract void Idle();
+    public virtual void Idle() { }
 
     public virtual void Death()
     {
@@ -65,6 +63,8 @@ public abstract class TowerBase : MonoBehaviour
         {
             Debug.Log("Attack");
             Attack();
+            enemy = collision.gameObject.GetComponent<enemyClass>();
+            health -= enemy.attackDamage;
         }
     }
 
