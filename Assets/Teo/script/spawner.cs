@@ -31,15 +31,17 @@ public class spawner : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(8);
-       
-       
-        Instantiate(basicEnemy, canvas.transform);
         basicEnemy.transform.position = spawner1;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
+
+        stunner.transform.position = spawner3;
+        flyingEnemy.transform.position = spawner4;
         Instantiate(basicEnemy, canvas.transform);
-        
-        basicEnemy.transform.position = spawner2;
+        bigEnemy.transform.position = spawner2;
+        yield return new WaitForSeconds(5);
+        Instantiate(bigEnemy, canvas.transform);
+        Instantiate(stunner, canvas.transform);
+        Instantiate(flyingEnemy, canvas.transform);
         final = true;
     }
 

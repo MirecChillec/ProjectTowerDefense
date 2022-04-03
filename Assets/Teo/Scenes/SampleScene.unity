@@ -1102,8 +1102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035592a57762b764db2685a9869160ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object_Drag2: {fileID: 8891399509080454249, guid: c56e7c373d020cd48bb6775b8646ebe3, type: 3}
-  object_game2: {fileID: 8891399509080454249, guid: c56e7c373d020cd48bb6775b8646ebe3, type: 3}
+  object_Drag2: {fileID: 8936620368159447686, guid: dde18d34e6a126c419f786c7fd9e8c0b, type: 3}
+  object_game2: {fileID: 8560454572845365702, guid: ef33d5fa79fcd40408efc3475d0b9979, type: 3}
   canvas: {fileID: 1783234160}
 --- !u!114 &470540791
 MonoBehaviour:
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_Drag1: {fileID: 2610692161804186223, guid: 051ddb01963aebc4a816aef5fc1aedaa, type: 3}
-  object_game1: {fileID: 7765754510270427749, guid: 4c52093d86817184aa15d66d24c1c616, type: 3}
+  object_game1: {fileID: 1298143859986844395, guid: 857a08a02d0c1894f877176779d2b0b2, type: 3}
   canvas: {fileID: 1783234160}
 --- !u!114 &543201281
 MonoBehaviour:
@@ -2133,12 +2133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c562c8254fb3634bbe7a7c6f3b48a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScene: 
+  winScene: win
   final: 0
-  basicEnemy: {fileID: 3659709907028873901, guid: e2844ebaf57186b4ca0684295ba93c76, type: 3}
-  bigEnemy: {fileID: 0}
-  stunner: {fileID: 0}
-  flyingEnemy: {fileID: 0}
+  basicEnemy: {fileID: 1240374717836496522, guid: 6d51a35fa1e63e748a8af6f2cd93ea90, type: 3}
+  bigEnemy: {fileID: 5122251268625579889, guid: affad84593d1afe4e8bf800eb7e5d4ab, type: 3}
+  stunner: {fileID: 2966638178355494772, guid: cf211f2f5e3334e4cbdba4ed5529d904, type: 3}
+  flyingEnemy: {fileID: 6581299058804557469, guid: 659e937eb7d3a8342a95dee15a158570, type: 3}
   spawner1: {x: 685, y: 230, z: 0}
   spawner2: {x: 727, y: 86, z: 0}
   spawner3: {x: 767, y: -39, z: 0}
@@ -2167,7 +2167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_Drag: {fileID: 9173159143399008304, guid: 6a6828f1a38ab814ba75bf228f5854c7, type: 3}
-  object_game: {fileID: 6796732441611940973, guid: 99b5289ed1587a2409194143775afb6c, type: 3}
+  object_game: {fileID: 7697462743453937568, guid: 05ca39cfb6bf796409cb60ffbcebfa78, type: 3}
   canvas: {fileID: 1783234160}
   ObjectDragInstance: {fileID: 0}
 --- !u!114 &948043536
@@ -5356,7 +5356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_Drag3: {fileID: 8393959532030220809, guid: d8c396f8bc1a06d45be3e1ea2cafff2d, type: 3}
-  object_game3: {fileID: 995428052807593360, guid: a52aa71152fe2364e9f592d92379ead0, type: 3}
+  object_game3: {fileID: 4212716530558309547, guid: 63b1eded91105d84a9bc4d052f85fca8, type: 3}
   canvas: {fileID: 1783234160}
 --- !u!114 &1989030447
 MonoBehaviour:
