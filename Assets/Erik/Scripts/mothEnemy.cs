@@ -18,7 +18,7 @@ public class mothEnemy : enemyClass
 
             foreach(Collider2D tower in hitTowers)
             {
-                tower.GetComponent<TowerBase>().TakeDamage();
+                tower.GetComponent<TowerBase>().TakeDamage(attackDamage);
             } 
 
             timeStamp = Time.time + coolDownInSeconds;

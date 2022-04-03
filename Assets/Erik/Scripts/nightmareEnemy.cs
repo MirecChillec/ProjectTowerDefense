@@ -21,7 +21,7 @@ public class nightmareEnemy : enemyClass
 
                 foreach(Collider2D tower in hitTowers)
                 {
-                    tower.GetComponent<TowerBase>().TakeDamage();
+                    tower.GetComponent<TowerBase>().TakeDamage(attackDamage);
                 }
                 timeStamp = Time.time + coolDownInSeconds;
             }
@@ -33,7 +33,7 @@ public class nightmareEnemy : enemyClass
 
                 foreach(Collider2D tower in hitTowers)
                 {
-                    tower.GetComponent<TowerBase>().TakeDamage();
+                    tower.GetComponent<TowerBase>().TakeDamage(attackDamage);
                 }
                 timeStamp = Time.time + coolDownInSeconds;
             }
@@ -45,7 +45,7 @@ public class nightmareEnemy : enemyClass
 
                 foreach(Collider2D tower in hitTowers)
                 {
-                    tower.GetComponent<TowerBase>().TakeDamage();
+                    tower.GetComponent<TowerBase>().TakeDamage(attackDamage);
                 }
                 timeStamp = Time.time + coolDownInSeconds;
             }
@@ -57,7 +57,7 @@ public class nightmareEnemy : enemyClass
 
                 foreach(Collider2D tower in hitTowers)
                 {
-                    tower.GetComponent<TowerBase>().TakeDamage();
+                    tower.GetComponent<TowerBase>().TakeDamage(attackDamage);
                 }
                 timeStamp = Time.time + coolDownInSeconds;
             }
