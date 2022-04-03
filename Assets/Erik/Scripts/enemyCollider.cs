@@ -12,13 +12,6 @@ public class enemyCollider : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    private void Update() 
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            EnemyTakeDamage(towerDamage);
-        }
-    }
 
     public void EnemyTakeDamage(int damage)
     {

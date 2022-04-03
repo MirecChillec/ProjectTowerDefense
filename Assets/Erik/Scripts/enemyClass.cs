@@ -46,7 +46,7 @@ public class enemyClass : MonoBehaviour
 
             foreach(Collider2D tower in hitTowers)
             {
-                tower.GetComponent<towerrr>().TakeDamage(attackDamage);
+                tower.GetComponent<TowerBase>().TakeDamage();
             }
             timeStamp = Time.time + coolDownInSeconds;
         }    
@@ -58,14 +58,14 @@ public class enemyClass : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-    private void OnTriggerStay2D(Collider2D trig) 
+    public virtual void OnTriggerStay2D(Collider2D trig) 
     {
         if(trig.gameObject.tag == "Tower")
         {
             inRange = true;
         }
     }
-    private void OnTriggerExit2D(Collider2D trig) 
+    public virtual void OnTriggerExit2D(Collider2D trig) 
     {
         if(trig.gameObject.tag == "Tower")
         {
