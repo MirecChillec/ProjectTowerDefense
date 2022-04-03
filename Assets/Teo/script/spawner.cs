@@ -31,15 +31,23 @@ public class spawner : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(8);
-       
-       
-        Instantiate(basicEnemy, canvas.transform);
         basicEnemy.transform.position = spawner1;
-        yield return new WaitForSeconds(5);
-        Instantiate(basicEnemy, canvas.transform);
+        yield return new WaitForSeconds(8);
+
         
-        basicEnemy.transform.position = spawner2;
+        Instantiate(basicEnemy, canvas.transform);
+        bigEnemy.transform.position = spawner2;
+        stunner.transform.position = spawner4;
+        flyingEnemy.transform.position = spawner3;
+        yield return new WaitForSeconds(5);
+        
+        Instantiate(bigEnemy, canvas.transform);
+        
+        Instantiate(stunner, canvas.transform);
+        
+        Instantiate(flyingEnemy, canvas.transform);
+        
+
         final = true;
     }
 
@@ -48,7 +56,7 @@ public class spawner : MonoBehaviour
 
         
 
-        if (final == true && GameObject.FindGameObjectsWithTag("enemy").Length == 0)
+        if (final == true && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             SceneManager.LoadScene(winScene);
         }

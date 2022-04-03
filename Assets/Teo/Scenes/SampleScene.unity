@@ -2133,16 +2133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c562c8254fb3634bbe7a7c6f3b48a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScene: 
+  winScene: win
   final: 0
-  basicEnemy: {fileID: 3659709907028873901, guid: e2844ebaf57186b4ca0684295ba93c76, type: 3}
-  bigEnemy: {fileID: 0}
-  stunner: {fileID: 0}
-  flyingEnemy: {fileID: 0}
+  basicEnemy: {fileID: 1110747718657799907, guid: 6d51a35fa1e63e748a8af6f2cd93ea90, type: 3}
+  bigEnemy: {fileID: 4048519668119323812, guid: affad84593d1afe4e8bf800eb7e5d4ab, type: 3}
+  stunner: {fileID: 5958511947829118864, guid: cf211f2f5e3334e4cbdba4ed5529d904, type: 3}
+  flyingEnemy: {fileID: 7326092699068054460, guid: 659e937eb7d3a8342a95dee15a158570, type: 3}
   spawner1: {x: 685, y: 230, z: 0}
-  spawner2: {x: 727, y: 86, z: 0}
+  spawner2: {x: 727, y: 100, z: 0}
   spawner3: {x: 767, y: -39, z: 0}
-  spawner4: {x: 818, y: -164, z: 0}
+  spawner4: {x: 818, y: -140, z: 0}
   canvas: {fileID: 1783234160}
 --- !u!224 &928950392 stripped
 RectTransform:
