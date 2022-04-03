@@ -28,11 +28,7 @@ public class enemyCollider : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            EnemyDie();
+            enemy.GetComponent<enemyClass>().EnemyDie();
         }
     }
-    public void EnemyDie()
-    {
-        Destroy(enemy.gameObject);
-    } 
 }

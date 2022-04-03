@@ -15,6 +15,9 @@ public class enemyClass : MonoBehaviour
     public Animator animator;
     public float timeStamp;
     public float coolDownInSeconds = 5f;
+    public GameObject enemyParentObject;
+    public GameObject deathObject;
+    public Transform deathPoint;
     private void Start() 
     {
         isMoving = true;
@@ -70,4 +73,9 @@ public class enemyClass : MonoBehaviour
             isMoving = true;
         }
     }
+    public void EnemyDie()
+    {
+        Instantiate(deathObject, deathPoint.position, transform.rotation);
+        Destroy(enemyParentObject);
+    } 
 }
