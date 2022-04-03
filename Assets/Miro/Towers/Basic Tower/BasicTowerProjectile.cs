@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class BasicTowerProjectile : MonoBehaviour
 {
+    public GameObject basicTower;
+    public GameObject explosion;
+    public int damage;
     void Start()
     {
+        damage = basicTower.GetComponent<BasicTower>().damage;
         StartCoroutine(Destruction());
     }
 
@@ -22,6 +26,11 @@ public class BasicTowerProjectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Instantiate();
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("hit");
+            Instantiate(explosion, this.gameObject.transform.position + Vector3.right * 0.2f, new Quaternion(0,0,0,0));
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -19,7 +19,7 @@ public class TankTower : TowerBase
     public override void Update()
     {
         base.Update();
-        if (shieldScript.currentHealth < 10)
+        if (shieldScript.currentHealth < 1)
         {
             ChangeAnimationState("Tank_Tower_Idle");
         }

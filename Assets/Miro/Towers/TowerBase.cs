@@ -33,9 +33,9 @@ public abstract class TowerBase : MonoBehaviour
 
     public abstract void Attack();
 
-    public virtual void TakeDamage()
+    public virtual void TakeDamage(int damage)
     {
-        
+        health -= damage;
     }
 
     public virtual void Sell()
@@ -73,6 +73,14 @@ public abstract class TowerBase : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Idle();
+        }
+    }
+
+    public virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(collision.gameObject.GetComponent<enemyClass>().attackDamage);
         }
     }
 
