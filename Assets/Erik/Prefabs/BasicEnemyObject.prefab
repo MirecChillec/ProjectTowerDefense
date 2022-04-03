@@ -73,7 +73,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   towerDamage: 2
-  enemy: {fileID: 7320202938490265779}
+  enemy: {fileID: 7320202939077804088}
 --- !u!1 &7320202938105254457
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +99,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7320202938105254457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8199997, y: 0.119999886, z: -129.07474}
+  m_LocalPosition: {x: -5.8199997, y: 0.119999886, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 7320202939077804091}
@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7320202938142737732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6399994, y: -0.68000007, z: -129.07474}
+  m_LocalPosition: {x: -2.6399994, y: -0.68000007, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 7320202939077804091}
@@ -185,7 +185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7320202938490265779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.64, y: -0.6254349, z: -129.07474}
+  m_LocalPosition: {x: 13.64, y: -0.6254349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7320202939077804091}
@@ -220,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7320202939077804088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.35, y: -1.16, z: 129.07474}
+  m_LocalPosition: {x: -10.35, y: -1.16, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 7320202938105254456}
@@ -324,6 +324,9 @@ MonoBehaviour:
   animator: {fileID: 7320202939077804095}
   timeStamp: 0
   coolDownInSeconds: 5
+  enemyParentObject: {fileID: 7320202938490265779}
+  deathObject: {fileID: 8627603289450166270, guid: b0c758fa3dd78c64397b7e8b70ec459b, type: 3}
+  deathPoint: {fileID: 7320202937089431088}
 --- !u!50 &7320202939077804090
 Rigidbody2D:
   serializedVersion: 4

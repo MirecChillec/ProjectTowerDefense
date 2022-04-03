@@ -14,25 +14,73 @@ AnimationClip:
   m_RotationCurves: []
   m_CompressedRotationCurves: []
   m_EulerCurves: []
-  m_PositionCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.6, y: -1.76, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: 
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 3.23, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: NightmareEnemyCollider
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0.86, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: NightmareEnemyTriggerArea
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: b4c42bed1cb05fc46a95b66ce2651c8d, type: 3}
+      value: {fileID: 21300000, guid: 1b86ec99c2452e64198d8e3bbc5ff048, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 75b8f6c42fc956b4cb92e3fc1403bf3a, type: 3}
+      value: {fileID: 21300000, guid: 18c1224cdc91cf347b123f84d4deea65, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 678fea3cf71e2b9419c254dfbebe143d, type: 3}
+      value: {fileID: 21300000, guid: 29cfdf19ea6ac274cace372302d80602, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 868d471139f045b49a3b4ac99ed06eda, type: 3}
+      value: {fileID: 21300000, guid: 316992c81caa2174693f0f00daae808f, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 1f3b2293e3651534ab8aab5637db5549, type: 3}
+      value: {fileID: 21300000, guid: 1177f5bccc36f6f43896e8d077b895fa, type: 3}
     - time: 0.41666666
-      value: {fileID: 21300000, guid: fb47e26af63887a4481471a36dcd8117, type: 3}
+      value: {fileID: 21300000, guid: 9421d41436fdbf24db883a21eaca1c4b, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 567f528de31588a4faa07f334fe4064f, type: 3}
+      value: {fileID: 21300000, guid: 740a8a6c9e145f042a21fb946727a987, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -51,14 +99,35 @@ AnimationClip:
       typeID: 114
       customType: 0
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 0
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 547182878
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2418612882
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: b4c42bed1cb05fc46a95b66ce2651c8d, type: 3}
-    - {fileID: 21300000, guid: 75b8f6c42fc956b4cb92e3fc1403bf3a, type: 3}
-    - {fileID: 21300000, guid: 678fea3cf71e2b9419c254dfbebe143d, type: 3}
-    - {fileID: 21300000, guid: 868d471139f045b49a3b4ac99ed06eda, type: 3}
-    - {fileID: 21300000, guid: 1f3b2293e3651534ab8aab5637db5549, type: 3}
-    - {fileID: 21300000, guid: fb47e26af63887a4481471a36dcd8117, type: 3}
-    - {fileID: 21300000, guid: 567f528de31588a4faa07f334fe4064f, type: 3}
+    - {fileID: 21300000, guid: 1b86ec99c2452e64198d8e3bbc5ff048, type: 3}
+    - {fileID: 21300000, guid: 18c1224cdc91cf347b123f84d4deea65, type: 3}
+    - {fileID: 21300000, guid: 29cfdf19ea6ac274cace372302d80602, type: 3}
+    - {fileID: 21300000, guid: 316992c81caa2174693f0f00daae808f, type: 3}
+    - {fileID: 21300000, guid: 1177f5bccc36f6f43896e8d077b895fa, type: 3}
+    - {fileID: 21300000, guid: 9421d41436fdbf24db883a21eaca1c4b, type: 3}
+    - {fileID: 21300000, guid: 740a8a6c9e145f042a21fb946727a987, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -79,8 +148,179 @@ AnimationClip:
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0
-  m_EditorCurves: []
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.6
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -1.76
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 3.23
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: NightmareEnemyCollider
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: NightmareEnemyCollider
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: NightmareEnemyCollider
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.86
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: NightmareEnemyTriggerArea
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: NightmareEnemyTriggerArea
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: NightmareEnemyTriggerArea
+    classID: 4
+    script: {fileID: 0}
   m_EulerEditorCurves: []
-  m_HasGenericRootTransform: 0
+  m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events: []

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789562710454003045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -0.17999983, z: -129.07474}
+  m_LocalPosition: {x: -4, y: -0.17999983, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 3789562711916860055}
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789562711465099615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.17, y: 0.63, z: -129.07474}
+  m_LocalPosition: {x: -6.17, y: 0.63, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 3789562711916860055}
@@ -160,7 +160,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   towerDamage: 2
-  enemy: {fileID: 3789562712143073961}
+  enemy: {fileID: 3789562711916860054}
 --- !u!1 &3789562711916860054
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789562711916860054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.33, y: 2.79, z: 129.07474}
+  m_LocalPosition: {x: 1.33, y: 2.79, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 3789562711465099600}
@@ -293,6 +293,9 @@ MonoBehaviour:
   animator: {fileID: 3789562711916860075}
   timeStamp: 0
   coolDownInSeconds: 5
+  enemyParentObject: {fileID: 3789562712143073961}
+  deathObject: {fileID: 8627603289450166270, guid: b0c758fa3dd78c64397b7e8b70ec459b, type: 3}
+  deathPoint: {fileID: 3789562711513436554}
 --- !u!50 &3789562711916860073
 Rigidbody2D:
   serializedVersion: 4
@@ -338,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789562712143073961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.22, y: -0.6254349, z: -129.07474}
+  m_LocalPosition: {x: 6.22, y: -0.6254349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3789562711916860055}
