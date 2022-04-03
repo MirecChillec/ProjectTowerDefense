@@ -19,7 +19,7 @@ public class TankTower : TowerBase
     public override void Update()
     {
         base.Update();
-        if (shieldScript.currentHealth < 10)
+        if (shieldScript.currentHealth < 1)
         {
             ChangeAnimationState("Tank_Tower_Idle");
         }
@@ -29,7 +29,22 @@ public class TankTower : TowerBase
     {
         if (shieldScript.currentHealth >= 10)
         {
-            ChangeAnimationState("Tank_Attack");
+            if (shieldScript.currentHealth >= 75)
+            {
+                ChangeAnimationState("Tank_Attack_100");
+            }
+            else if (shieldScript.currentHealth >= 50 && shieldScript.currentHealth < 75)
+            {
+                ChangeAnimationState("Tank_Attack_75");
+            }
+            else if (shieldScript.currentHealth >= 25 && shieldScript.currentHealth < 50)
+            {
+                ChangeAnimationState("Tank_Attack_50");
+            }
+            else if (shieldScript.currentHealth > 0 && shieldScript.currentHealth < 25)
+            {
+                ChangeAnimationState("Tank_Attack_25");
+            }
         }
         else
         {
@@ -46,6 +61,7 @@ public class TankTower : TowerBase
 
     public override void Shoot()
     {
+       
         ChangeAnimationState("Tank_Shielded");
         shieldRenderer.enabled = true;
         shieldScript.canRecharge = false;

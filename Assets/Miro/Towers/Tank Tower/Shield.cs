@@ -9,6 +9,12 @@ public class Shield : MonoBehaviour
     public string currentState; 
     public Animator towerAnimator;
     public bool canRecharge = false;
+    public SpriteRenderer shieldRenderer;
+
+    public Sprite shield100;
+    public Sprite shield75;
+    public Sprite shield50;
+    public Sprite shield25;
 
     void Start()
     {
@@ -25,15 +31,19 @@ public class Shield : MonoBehaviour
         }
         else if (currentHealth / maxHealth * 100 <= 25)
         {
-
+            shieldRenderer.sprite = shield25;
         }
         else if (currentHealth / maxHealth * 100 <= 50)
         {
-
+            shieldRenderer.sprite = shield50;
         }
         else if (currentHealth / maxHealth * 100 <= 75)
         {
-
+            shieldRenderer.sprite = shield75;
+        }
+        else if(currentHealth/maxHealth * 100 > 75)
+        {
+            shieldRenderer.sprite = shield100;
         }
 
         if (canRecharge && currentHealth < 100)
