@@ -12,10 +12,10 @@ public class spawner : MonoBehaviour
     public GameObject stunner;
     public GameObject flyingEnemy;
     
-    public Transform spawner1;
-    public Transform spawner2;
-    public Transform spawner3;
-    public Transform spawner4;
+    public Vector3 spawner1;
+    public Vector3 spawner2;
+    public Vector3 spawner3;
+    public Vector3 spawner4;
 
     public Canvas canvas;
   
@@ -35,7 +35,11 @@ public class spawner : MonoBehaviour
        
        
         Instantiate(basicEnemy, canvas.transform);
+        basicEnemy.transform.position = spawner1;
+        yield return new WaitForSeconds(5);
+        Instantiate(basicEnemy, canvas.transform);
         
+        basicEnemy.transform.position = spawner2;
         final = true;
     }
 
