@@ -7,17 +7,17 @@ public class SniperTower : TowerBase
     public List<GameObject> enemies = new List<GameObject>();
     public override void Attack()
     {
-
+        ChangeAnimationState("Sniper_Attack");
     }
 
     public override void Idle()
     {
-
+        ChangeAnimationState("Sniper_Idle");
     }
 
     public override void Shoot()
     {
-
+        Instantiate(projectile);
     }
 
     public override void Update()

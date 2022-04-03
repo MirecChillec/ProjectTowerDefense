@@ -13,6 +13,7 @@ public abstract class TowerBase : MonoBehaviour
     public string currentState;
     public bool isDisabled = false;
     public bool isVulnerable = true;
+    public float time;
 
     public GameObject projectile;
     public Transform position;
@@ -28,6 +29,7 @@ public abstract class TowerBase : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         towerAnimator = GetComponent<Animator>();
         position = this.gameObject.transform;
+        time = attackSpeed;
         Idle();
     }
 
@@ -61,10 +63,10 @@ public abstract class TowerBase : MonoBehaviour
 
     public virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && time>=attackSpeed)
         {
-            Debug.Log("Attack");
             Attack();
+            time = 0;
         }
     }
 
@@ -100,6 +102,8 @@ public abstract class TowerBase : MonoBehaviour
         {
             Death();
         }
+
+        time += Time.time * Time.deltaTime;
     }
 
     public void ChangeAnimationState(string newState)
