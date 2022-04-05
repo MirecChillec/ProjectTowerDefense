@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void Enter()
     {
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
+        SceneManager.LoadScene("TestFix");
     }
 
     public void Exit()
@@ -17,6 +17,6 @@ public class Menu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
+        SceneManager.LoadScene("TestFix");
     }
 }
