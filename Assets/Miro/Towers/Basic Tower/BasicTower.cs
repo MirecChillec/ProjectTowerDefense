@@ -14,6 +14,12 @@ public class BasicTower : TowerBase
         ChangeAnimationState("Basic_Tower_Idle");
     }
 
+    public override void Sell()
+    {
+        money.money += money.basicCost / 100 * 25;
+        base.Sell();
+    }
+
     public override void Shoot()
     {
         Instantiate(projectile, this.gameObject.transform.position + Vector3.right, new Quaternion(0,0,0,0));

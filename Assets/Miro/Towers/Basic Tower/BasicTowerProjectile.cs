@@ -9,7 +9,7 @@ public class BasicTowerProjectile : MonoBehaviour
     public int damage;
     void Start()
     {
-        damage = basicTower.GetComponent<BasicTower>().damage;
+        damage = basicTower.GetComponentInChildren<BasicTower>().damage;
         StartCoroutine(Destruction());
     }
 

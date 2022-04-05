@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7383567122441147284}
   m_Layer: 0
   m_Name: Sniper Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,6 +283,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
+  money: {fileID: 0}
   enemies: []
 --- !u!1 &2807910660225427405
 GameObject:
@@ -326,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6016297546769838694}
   - component: {fileID: 5139464201371942043}
+  - component: {fileID: 6876519221808060834}
   m_Layer: 0
   m_Name: sheep_projectile_spawn_7
   m_TagString: Untagged
@@ -398,3 +400,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6876519221808060834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4613864758782279018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0ed27fe391fbe4c851be81602fb55c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sniperScript: {fileID: 0}
+  isRising: 0
+  isFalling: 0
+  explosion: {fileID: 0}

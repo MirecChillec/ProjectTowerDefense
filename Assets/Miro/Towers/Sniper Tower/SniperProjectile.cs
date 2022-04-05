@@ -10,11 +10,6 @@ public class SniperProjectile : MonoBehaviour
 
     public GameObject explosion;
 
-    void Start()
-    {
-        isRising = true;
-    }
-
     public void Fall()
     {
         this.gameObject.transform.position = sniperScript.enemies[0].gameObject.transform.position + new Vector3(0, 10, 0);

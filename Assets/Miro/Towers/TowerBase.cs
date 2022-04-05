@@ -19,13 +19,15 @@ public abstract class TowerBase : MonoBehaviour
     public Transform position;
     public Animator towerAnimator;
     public BoxCollider2D rangeColider;
+    public BoxCollider2D solidColider;
     public SpriteRenderer spriteRenderer;
     public Color damageColor = Color.red;
     public Color normalColor = Color.white;
+    public Money money;
 
     public virtual void Start()
     {
-        rangeColider = GetComponent<BoxCollider2D>();
+        money = GameObject.Find("Money").GetComponent<Money>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         towerAnimator = GetComponent<Animator>();
         position = this.gameObject.transform;
@@ -38,12 +40,12 @@ public abstract class TowerBase : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         health -= damage;
+        lastTimeGotDamage = Time.time;
     }
 
     public virtual void Sell()
     {
         ChangeAnimationState("Death");
-        //Add money
         Destroy(this.gameObject);
     }
 
@@ -57,6 +59,21 @@ public abstract class TowerBase : MonoBehaviour
     public virtual void Obliterate()
     {
         Destroy(this.gameObject);
+    }
+
+    public virtual void Stunned()
+    {
+        Idle();
+        spriteRenderer.enabled = false;
+        rangeColider.enabled = false;
+        solidColider.enabled = false;
+    }
+
+    public virtual void Unstunned()
+    {
+        spriteRenderer.enabled = true;
+        rangeColider.enabled = true;
+        solidColider.enabled = true;
     }
 
     public abstract void Shoot();
@@ -80,9 +97,9 @@ public abstract class TowerBase : MonoBehaviour
 
     public virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("EnemyProjectile"))
         {
-            TakeDamage(collision.gameObject.GetComponent<enemyClass>().attackDamage);
+            TakeDamage(collision.gameObject.GetComponent<EnemyBasicProjectile>().damage);
         }
     }
 

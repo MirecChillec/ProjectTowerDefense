@@ -52,6 +52,15 @@ public class TankTower : TowerBase
         }
     }
 
+    public override void Unstunned()
+    {
+        base.Unstunned();
+        shieldActive = false;
+        shieldColider.enabled = false;
+        shieldRenderer.enabled = false;
+    }
+
+
     public override void Idle()
     {
         shieldRenderer.enabled = false;

@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Erik/Scenes/ErikScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Miro/MainMenu.unity
+    guid: 090a9d5899d141848bbe31e7d77c0014
+  - enabled: 1
+    path: Assets/Miro/TestFix.unity
+    guid: adfd4c636270d704f9c574b49296ac88
+  - enabled: 1
+    path: Assets/Miro/Lose.unity
+    guid: 7c60e378f3aac534883f18b370574b3a
   m_configObjects: {}

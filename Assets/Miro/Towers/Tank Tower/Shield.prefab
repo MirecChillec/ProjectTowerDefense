@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7818837298797305020}
   m_Layer: 0
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,3 +119,9 @@ MonoBehaviour:
   maxHealth: 100
   currentState: 
   towerAnimator: {fileID: 0}
+  canRecharge: 0
+  shieldRenderer: {fileID: 0}
+  shield100: {fileID: 0}
+  shield75: {fileID: 0}
+  shield50: {fileID: 0}
+  shield25: {fileID: 0}
